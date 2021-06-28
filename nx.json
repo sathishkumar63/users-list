@@ -19,6 +19,9 @@
     }
   },
   "projects": {
+    "user-lists": {
+      "tags": []
+    },
     "users-list": {
       "tags": []
     },

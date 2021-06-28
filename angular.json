@@ -1,6 +1,31 @@
 {
   "version": 1,
   "projects": {
+    "user-lists": {
+      "projectType": "library",
+      "root": "libs/user-lists",
+      "sourceRoot": "libs/user-lists/src",
+      "prefix": "users-list",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/user-lists"],
+          "options": {
+            "jestConfig": "libs/user-lists/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/user-lists/src/**/*.ts",
+              "libs/user-lists/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "users-list": {
       "projectType": "application",
       "root": "apps/users-list",

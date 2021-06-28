@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersComponent should create snapshot 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="users"
+  >
+    <div
+      class="control-panel"
+    >
+      <form
+        class="ng-untouched ng-pristine ng-valid"
+        novalidate=""
+      >
+        <label
+          class="select"
+        >
+          Select column to filter: 
+          <select
+            class="ng-untouched ng-pristine ng-valid"
+            id="filterProperty"
+            name="filterProperty"
+          >
+            <option
+              value="name"
+            >
+               Name 
+            </option>
+            <option
+              value="username"
+            >
+               User Name 
+            </option>
+            <option
+              value="email"
+            >
+               Email 
+            </option>
+            <option
+              value="phone"
+            >
+               Phone 
+            </option>
+            <option
+              value="website"
+            >
+               Website 
+            </option>
+            
+          </select>
+        </label>
+        <label
+          class="input"
+        >
+          Enter filter keywords: 
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="filterValue"
+            name="filterValue"
+            placeholder="filter keywords go here..."
+            type="text"
+          />
+        </label>
+      </form>
+    </div>
+    <div
+      class="users-list-wrapper"
+    >
+      <table
+        class="users-list"
+      >
+        <thead>
+          <tr>
+            <th
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              scope="col"
+            >
+              User Name
+            </th>
+            <th
+              scope="col"
+            >
+              E-mail
+            </th>
+            <th
+              scope="col"
+            >
+              Phone
+            </th>
+            <th
+              scope="col"
+            >
+              Website
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Leanne Graham
+            </td>
+            <td>
+              Bret
+            </td>
+            <td>
+              Sincere@april.biz
+            </td>
+            <td>
+              1-770-736-8031 x56442
+            </td>
+            <td>
+              hildegard.org
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Ervin Howell
+            </td>
+            <td>
+              Antonette
+            </td>
+            <td>
+              Shanna@melissa.tv
+            </td>
+            <td>
+              010-692-6593 x09125
+            </td>
+            <td>
+              anastasia.net
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

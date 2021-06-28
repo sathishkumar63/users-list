@@ -1,0 +1,55 @@
+<div class="users">
+  <div class="control-panel">
+    <form>
+      <label class="select"
+        >Select column to filter:
+        <select
+          name="filterProperty"
+          id="filterProperty"
+          [(ngModel)]="filterProperty"
+        >
+          <option *ngFor="let opt of options" [value]="opt.value">
+            {{ opt.text }}
+          </option>
+        </select>
+      </label>
+      <label class="input"
+        >Enter filter keywords:
+        <input
+          type="text"
+          placeholder="filter keywords go here..."
+          name="filterValue"
+          id="filterValue"
+          [(ngModel)]="filterValue"
+        />
+      </label>
+    </form>
+  </div>
+  <div class="users-list-wrapper">
+    <table class="users-list">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">User Name</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Website</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filtering User Data Using Pipes -->
+        <tr
+          *ngFor="
+            let _userList of userList | Filter: filterProperty:filterValue
+          "
+        >
+          <td>{{ _userList.name }}</td>
+          <td>{{ _userList.username }}</td>
+          <td>{{ _userList.email }}</td>
+          <td>{{ _userList.phone }}</td>
+          <td>{{ _userList.website }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
