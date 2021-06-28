@@ -74,15 +74,8 @@
     "typescript": "~4.2.4"
   },
   "jest": {
-    "modulePathIgnorePatterns": [
-      "tmp",
-      "<rootDir>/test",
-      "<rootDir>/packages",
-      "collection/.*/files"
-    ],
     "testPathIgnorePatterns": [
-      "node_modules",
-      "<rootDir>/build/packages/angular/spec"
+      "node_modules"
     ],
     "collectCoverage": true,
     "coverageReporters": [
